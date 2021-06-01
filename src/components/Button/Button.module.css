@@ -1,0 +1,13 @@
+.add-user {
+    background-color: #8b005d;
+    color: white;
+    padding: 0.5rem;
+    font:bold;
+    text-align: center;
+    display: left;
+    border: none;
+    border-radius: 0.5rem;
+}
+.add-user:hover{
+    cursor: pointer;
+}

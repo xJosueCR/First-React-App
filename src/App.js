@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import UserForm from "./components/UserForm/UserForm";
+import UserList from "./components/UserList/UserList";
+import "./App.css";
 
+const userItems = [
+  {
+    title: "Just for test",
+  },
+];
 function App() {
+  const [items, setItems] = useState(userItems)
+
+  const onNewItemHandler = (item) => {
+    setItems((prevItems) => {
+      return [item, ...prevItems]
+    })
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserForm onNewItem={onNewItemHandler}/>
+      <UserList className="list" items={items} />
     </div>
   );
 }

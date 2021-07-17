@@ -1,13 +1,19 @@
-.add-user {
-    background-color: #8b005d;
+  
+.button {
+    font: inherit;
+    border: 1px solid #4f005f;
+    background: #4f005f;
     color: white;
-    padding: 0.5rem;
-    font:bold;
-    text-align: center;
-    display: left;
-    border: none;
-    border-radius: 0.5rem;
-}
-.add-user:hover{
+    padding: 0.25rem 1rem;
     cursor: pointer;
-}
+  }
+  
+  .button:hover,
+  .button:active {
+    background: #741188;
+    border-color: #741188;
+  }
+  
+  .button:focus {
+    outline: none;
+  }

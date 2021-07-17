@@ -1,8 +1,8 @@
 import styles from './Card.module.css'
-const Card = () =>{
+const Card = (props) =>{
     return (
-        <div className={styles.card}>
-            <h1>TEST</h1>
+        <div className={`${styles.card} ${props.className}`}>
+           {props.children}
         </div>
     )
 }

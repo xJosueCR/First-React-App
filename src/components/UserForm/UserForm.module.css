@@ -1,22 +1,26 @@
-.user {
-  max-width: 50%;
-  margin: 3rem auto;
-  padding: 2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
-.formControl {
-    margin: 0.5rem 0;
-}
-
-.formControl label {
-    font: bold;
+.input {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
+  }
+  
+  .input label {
     display: block;
-}
-
-.formControl input {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input input {
+    font: inherit;
     display: block;
     width: 100%;
-    margin-top: 0.5rem;
-}
+    border: 1px solid #ccc;
+    padding: 0.15rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input input:focus {
+    outline: none;
+    border-color: #4f005f;
+  }
